@@ -1,0 +1,46 @@
+{
+    "tables": [
+        "table_1"
+    ],
+    "BelgeArsivB_rules": [
+        {
+            "column": "COLUMN",
+            "type": "where",
+            "value": "value"
+        },
+        {
+            "column": "COLUMN",
+            "group": "start",
+            "type": "like",
+            "value": "aaa"
+        },
+        {
+            "column": "COLUMN",
+            "group": "end",
+            "type": "like",
+            "value": "like_value"
+        },
+        {
+            "column": "COLUMN",
+            "type": "another",
+            "value": [
+                {
+                    "column": "home_column.remote_table.remote_table_get_table.where_remote_column",
+                    "operator": "OR",
+                    "type": "where",
+                    "value": "value"
+                },
+                {
+                    "column": "home_column.remote_table.remote_table_get_table.where_remote_column",
+                    "operator": "OR",
+                    "type": "another",
+                    "value": {
+                        "column": "get_columns.remote_table.where_remote_column",
+                        "type": "where",
+                        "value": "value"
+                    }
+                }
+            ]
+        }
+    ]
+}
