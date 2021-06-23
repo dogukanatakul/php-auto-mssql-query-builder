@@ -2,7 +2,7 @@
     "tables": [
         "table_1"
     ],
-    "BelgeArsivB_rules": [
+    "table_1_rules": [
         {
             "column": "COLUMN",
             "type": "where",
