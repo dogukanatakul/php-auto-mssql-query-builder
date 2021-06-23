@@ -1,5 +1,5 @@
 <?php
-        $query = file_get_contents("C:\server\www\doruk\public\multi-select.json");
+        $query = file_get_contents("multi-select.json");
         $query = json_decode($query, true);
 
         $sqls = [];
